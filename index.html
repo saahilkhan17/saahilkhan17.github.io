@@ -11,6 +11,10 @@
       name="description"
       content="Saahil Khan — Computer Science student and Python backend developer building REST APIs, backend systems, and AI-powered applications with FastAPI, Django, PostgreSQL, and cloud technologies."
     />
+    <meta name="author" content="Saahil Khan" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://saahilkhan17.github.io/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -84,6 +88,33 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Saahil Khan",
+        "url": "https://saahilkhan17.github.io/",
+        "jobTitle": "Python Backend Developer",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "CMR University"
+        },
+        "sameAs": [
+          "https://github.com/saahilkhan17",
+          "https://www.linkedin.com/in/saahil-khan-mehar"
+        ],
+        "knowsAbout": [
+          "Python",
+          "FastAPI",
+          "Django",
+          "REST APIs",
+          "PostgreSQL",
+          "LangChain",
+          "AWS S3"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header id="hero">
@@ -91,11 +122,11 @@
       <nav class="navbar">
         <div class="container">
           <!-- Logo -->
-          <h1 id="logo">
+          <div id="logo">
             <a href="#hero"
               ><img src="./assets/logo.png" alt="Saahil Khan"
             /></a>
-          </h1>
+          </div>
           <!-- Navbar links -->
           <ul class="nav-menu">
             <li><a class="nav-link" href="#hero">HOME</a></li>
