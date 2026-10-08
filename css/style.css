@@ -4,7 +4,38 @@
    * Cards and sections
 */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* Libron v0.30 — SIL Open Font License 1.1 (nicoverbruggen/libron) — self-hosted */
+@font-face {
+  font-family: "Libron";
+  src: url("../assets/fonts/Libron-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libron";
+  src: url("../assets/fonts/Libron-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libron";
+  src: url("../assets/fonts/Libron-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libron";
+  src: url("../assets/fonts/Libron-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* variables */
 :root {
@@ -20,10 +51,10 @@
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
-  /* Font Weight */
+  /* Font Weight — Libron ships Regular 400 + Bold 700 only */
   --weight-small: 400;
-  --weight-semibold: 600;
-  --weight-bold: 800;
+  --weight-semibold: 700;
+  --weight-bold: 700;
 
   /* Max width */
   --width-small: 600px;
@@ -68,8 +99,9 @@ a {
 body {
   background: var(--bg-primary);
   color: var(--text-color);
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
+  font-family: "Libron", Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
 /* Navbar */
