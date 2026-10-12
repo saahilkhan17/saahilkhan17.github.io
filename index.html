@@ -110,6 +110,11 @@
           "Django",
           "REST APIs",
           "PostgreSQL",
+          "Redis",
+          "Celery",
+          "Docker",
+          "JWT",
+          "pgvector",
           "LangChain",
           "AWS S3"
         ]
@@ -202,11 +207,14 @@
           Django, and PostgreSQL.
         </p>
         <p>
-          My projects span identity infrastructure with SCIM 2.0 provisioning,
-          LLM agents built with LangChain, and cloud file-sharing on AWS —
-          each one practice in how real systems handle auth, data, queues,
-          and deployment. I'm currently looking for software engineering and
-          backend internships.
+          My recent backend work includes CareerOPS (FastAPI + PostgreSQL +
+          Redis + Celery job-search platform), PayLedger (double-entry payment
+          ledger with idempotent transfers), PulseBoard (real-time analytics
+          ingestion with Redis Streams + WebSockets), ContextQA (RAG Q&A API
+          with pgvector), and HireTrack (job-tracker REST API) — alongside
+          identity infrastructure with SCIM 2.0 provisioning, LLM agents built
+          with LangChain, and cloud file-sharing on AWS. I'm currently looking
+          for software engineering and backend internships.
         </p>
       </div>
     </section>
@@ -226,11 +234,11 @@
         </div>
         <div class="info-card">
           <h3>Backend</h3>
-          <p>FastAPI, Django, REST APIs, Node.js</p>
+          <p>FastAPI, Django, REST APIs, Node.js, Celery, JWT, RBAC</p>
         </div>
         <div class="info-card">
           <h3>Database</h3>
-          <p>SQL, PostgreSQL, Firebase</p>
+          <p>SQL, PostgreSQL, pgvector, Redis, Firebase</p>
         </div>
         <div class="info-card">
           <h3>AI</h3>
@@ -238,7 +246,7 @@
         </div>
         <div class="info-card">
           <h3>Tools</h3>
-          <p>Git, GitHub, Vercel, AWS S3</p>
+          <p>Git, GitHub, Docker, Vercel, AWS S3</p>
         </div>
         <div class="info-card">
           <h3>Education</h3>
@@ -256,6 +264,114 @@
       </div>
 
       <article class="project">
+        <!-- Backend Project 1 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>CareerOPS</h3>
+              <p>
+                Flagship job-search backend: FastAPI + PostgreSQL + Redis +
+                Celery. Application tracker with state machine, deterministic
+                JD match scoring, listing ingestion pipeline, analytics, JWT +
+                API keys. 166 tests, 98.4% coverage.
+              </p>
+            </div>
+
+            <div class="project-link">
+              <a
+                href="https://github.com/saahilkhan17/CareerOPS"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Project 2 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>PayLedger API</h3>
+              <p>
+                Double-entry payment ledger API. FastAPI, PostgreSQL, JWT
+                RBAC, idempotent transfers, reconciliation worker, audit log.
+              </p>
+            </div>
+
+            <div class="project-link">
+              <a
+                href="https://github.com/saahilkhan17/payledger-api"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Project 3 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>PulseBoard API</h3>
+              <p>
+                Real-time product-analytics event ingestion API. FastAPI,
+                PostgreSQL, Redis Streams, WebSocket live feed.
+              </p>
+            </div>
+
+            <div class="project-link">
+              <a
+                href="https://github.com/saahilkhan17/pulseboard-api"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Project 4 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>ContextQA API</h3>
+              <p>
+                RAG knowledge-base Q&A API. FastAPI, PostgreSQL pgvector,
+                grounded answers with citations, hallucination refusal,
+                per-user namespaces.
+              </p>
+            </div>
+
+            <div class="project-link">
+              <a
+                href="https://github.com/saahilkhan17/contextqa-api"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Project 5 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>HireTrack API</h3>
+              <p>
+                Job-application tracker REST API. FastAPI, PostgreSQL, JWT
+                auth, filtering, pagination, stats, Docker.
+              </p>
+            </div>
+
+            <div class="project-link">
+              <a
+                href="https://github.com/saahilkhan17/hiretrack-api"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
         <!-- Project 1 -->
         <div href="" class="card">
           <div class="project-info">
