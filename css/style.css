@@ -432,3 +432,15 @@ body {
 #education .info-card {
   text-align: center;
 }
+
+/* ASCII art piece (ascii-magic) */
+.ascii-art-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 0;
+  overflow-x: auto;
+}
+
+.ascii-art-section ascii-art {
+  max-width: 100%;
+}
