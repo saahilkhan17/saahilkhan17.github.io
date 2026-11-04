@@ -432,3 +432,26 @@ body {
 #education .info-card {
   text-align: center;
 }
+
+/* Mobile menu layering fix: navbar and open menu stay above hero content
+   (the hero profile image runs an infinite transform animation, which
+   creates its own stacking layer that could paint over the menu) */
+.navbar {
+  z-index: 1000;
+}
+
+.header-container {
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 670px) {
+  .navbar .nav-menu {
+    z-index: 1000;
+  }
+
+  .hamburger {
+    position: relative;
+    z-index: 1001;
+  }
+}
