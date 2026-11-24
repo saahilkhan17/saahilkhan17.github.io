@@ -455,3 +455,87 @@ body {
     z-index: 1001;
   }
 }
+
+/* My Tools */
+.tool-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.tool-card {
+  background: var(--card-background);
+  color: var(--text-color);
+  border-radius: 5px;
+  padding: 2rem;
+  transition: 0.4s ease-in-out;
+}
+
+.tool-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.tool-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool-card p {
+  font-size: 0.88rem;
+}
+
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.tool-tags span {
+  background: var(--bg-primary);
+  border-radius: 30px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+}
+
+.tool-steps {
+  margin: 1.5rem 0 0;
+}
+
+.tool-steps h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool-steps ol {
+  margin-left: 1.2rem;
+  font-size: 0.85rem;
+}
+
+.tool-steps li {
+  margin-bottom: 0.4rem;
+}
+
+.tool-card code {
+  background: var(--bg-primary);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.tool-note {
+  font-size: 0.8rem !important;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+.tool-download {
+  margin-top: 1.5rem;
+}
+
+.tool-download i {
+  margin-right: 0.5rem;
+}
