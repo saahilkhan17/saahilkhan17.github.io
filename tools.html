@@ -8,7 +8,7 @@
     <meta name="title" content="My Tools | Saahil Khan" />
     <meta
       name="description"
-      content="Free tools by Saahil Khan — SizzlerCleans, a Windows batch script that organizes your folders automatically."
+      content="Free Windows tools by Saahil Khan — SizzlerCleans organizes your folders, SizzlerTempFree clears temporary files."
     />
     <meta name="author" content="Saahil Khan" />
     <meta name="robots" content="index, follow" />
@@ -21,7 +21,7 @@
     <meta property="og:title" content="My Tools | Saahil Khan" />
     <meta
       property="og:description"
-      content="Free tools by Saahil Khan — SizzlerCleans, a Windows batch script that organizes your folders automatically."
+      content="Free Windows tools by Saahil Khan — SizzlerCleans organizes your folders, SizzlerTempFree clears temporary files."
     />
     <meta property="og:image" content="https://github.com/saahilkhan17.png" />
 
@@ -31,7 +31,7 @@
     <meta property="twitter:title" content="My Tools | Saahil Khan" />
     <meta
       property="twitter:description"
-      content="Free tools by Saahil Khan — SizzlerCleans, a Windows batch script that organizes your folders automatically."
+      content="Free Windows tools by Saahil Khan — SizzlerCleans organizes your folders, SizzlerTempFree clears temporary files."
     />
     <meta property="twitter:image" content="https://github.com/saahilkhan17.png" />
 
@@ -189,6 +189,61 @@
           <a
             href="assets/SizzlerCleans.bat"
             download="SizzlerCleans.bat"
+            class="btn btn-primary tool-download"
+            ><i class="fas fa-download"></i> Download .bat</a
+          >
+        </div>
+
+        <div class="tool-card">
+          <h3>SizzlerTempFree</h3>
+          <p>
+            A Windows cleanup script that clears temporary files from your user
+            TEMP folder and the Windows Temp folder. It asks for confirmation
+            before deleting anything and skips files that are currently in use.
+          </p>
+
+          <div class="tool-tags">
+            <span>User TEMP</span>
+            <span>Windows Temp</span>
+            <span>Asks confirmation</span>
+            <span>Skips locked files</span>
+          </div>
+
+          <div class="tool-steps">
+            <h4>How to use it</h4>
+            <ol>
+              <li>
+                Download the <code>.bat</code> file using the button below and
+                save it anywhere on your computer.
+              </li>
+              <li>
+                <strong>Double-click SizzlerTempFree.bat</strong> — a command
+                window opens and asks <em>"Continue with cleanup? (Y/N)"</em>.
+              </li>
+              <li>
+                Press <strong>Y</strong> to start. It cleans your user TEMP
+                folder first, then the Windows Temp folder if permitted.
+              </li>
+              <li>
+                Files being used by Windows or other apps are skipped
+                automatically, so some temp files may remain.
+              </li>
+              <li>
+                When you see <em>"Cleanup finished."</em>, press any key to
+                close the window.
+              </li>
+            </ol>
+          </div>
+
+          <p class="tool-note">
+            Note: it only targets temp folders — your documents, downloads and
+            photos are not touched. Press <strong>N</strong> at the prompt to
+            cancel without changing anything. Windows only.
+          </p>
+
+          <a
+            href="assets/SizzlerTempFree.bat"
+            download="SizzlerTempFree.bat"
             class="btn btn-primary tool-download"
             ><i class="fas fa-download"></i> Download .bat</a
           >
