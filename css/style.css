@@ -590,38 +590,3 @@ body {
     padding: 1.25rem;
   }
 }
-
-/* Animated ASCII hero background */
-#hero {
-  position: relative;
-  overflow: hidden;
-}
-
-#ascii-bg {
-  /* The player sets an inline size from the size attribute. This wins so the
-     art scales with the viewport and covers the hero on any screen. */
-  --ascii-size: clamp(16px, 2vw, 34px) !important;
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  opacity: 0.25;
-}
-
-#hero .header-container {
-  position: relative;
-  z-index: 1;
-}
-
-@media (max-width: 768px) {
-  #ascii-bg {
-    --ascii-size: clamp(14px, 4vw, 24px) !important;
-    opacity: 0.2;
-  }
-}
