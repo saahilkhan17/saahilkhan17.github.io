@@ -138,11 +138,7 @@
             <li><a class="nav-link" href="#about">ABOUT</a></li>
             <li><a class="nav-link" href="#skills">SKILLS</a></li>
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li>
-              <a class="nav-link tools-link" href="#tools"
-                >TOOLS <i class="fas fa-lock tools-lock-icon"></i
-              ></a>
-            </li>
+            <li><a class="nav-link" href="tools.html">TOOLS</a></li>
             <li><a class="nav-link" href="#education">EDUCATION</a></li>
             <li><a class="nav-link" href="#footer">CONTACT</a></li>
             <li>
@@ -450,90 +446,6 @@
       ></a>
     </section>
 
-    <!-- My Tools -->
-    <section id="tools" class="info-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>My Tools</h2>
-        <p>Small utilities I built to make everyday computer tasks easier</p>
-      </div>
-
-      <div class="tools-locked" id="tools-locked">
-        <i class="fas fa-lock"></i>
-        <h3>This section is password protected</h3>
-        <p>Enter the password to view and download my tools.</p>
-        <button type="button" class="btn btn-primary" id="unlock-tools-btn">
-          Unlock Tools
-        </button>
-      </div>
-
-      <div id="tools-content" hidden>
-        <article class="tool-grid">
-          <div class="tool-card">
-            <h3>SizzlerCleans</h3>
-            <p>
-              A lightweight Windows batch script that instantly tidies any folder
-              by sorting loose files into category folders. No installation, no
-              setup — just drop it in a folder and run it.
-            </p>
-
-            <div class="tool-tags">
-              <span>Videos</span>
-              <span>Photos</span>
-              <span>Documents</span>
-              <span>Txt Files</span>
-              <span>Music</span>
-              <span>Zip</span>
-              <span>Apps</span>
-              <span>Others</span>
-            </div>
-
-            <div class="tool-steps">
-              <h4>How to use it</h4>
-              <ol>
-                <li>
-                  Download the <code>.bat</code> file using the button below and
-                  place it in the folder you want to clean (for example, your
-                  <strong>Downloads</strong> folder).
-                </li>
-                <li>
-                  <strong>Double-click SizzlerCleans.bat</strong> — a command
-                  window opens and sorts the files automatically.
-                </li>
-                <li>
-                  Files move into folders beside the script based on their type
-                  (for example, <code>.mp4</code> → <strong>Videos</strong>,
-                  <code>.jpg</code> → <strong>Photos</strong>,
-                  <code>.pdf</code> → <strong>Documents</strong>). Anything
-                  unrecognized goes into <strong>Others</strong>.
-                </li>
-                <li>
-                  Files that are still downloading (<code>.crdownload</code>,
-                  <code>.part</code>, <code>.tmp</code>) are left untouched.
-                </li>
-                <li>
-                  When you see <em>"Done! Your folder has been organized."</em>,
-                  press any key to close the window.
-                </li>
-              </ol>
-            </div>
-
-            <p class="tool-note">
-              Note: it only organizes files in the folder it is placed in — it
-              does not touch subfolders. Windows only.
-            </p>
-
-            <a
-              href="assets/SizzlerCleans.bat"
-              download="SizzlerCleans.bat"
-              class="btn btn-primary tool-download"
-              ><i class="fas fa-download"></i> Download .bat</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-
     <!-- Education -->
     <section id="education" class="info-container container">
       <div class="division"></div>
@@ -576,43 +488,6 @@
         </p>
       </div>
     </footer>
-    <!-- Password modal -->
-    <div class="modal-overlay" id="password-modal" hidden>
-      <div
-        class="modal-card"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-      >
-        <button
-          type="button"
-          class="modal-close"
-          id="modal-close"
-          aria-label="Close"
-        >
-          &times;
-        </button>
-        <i class="fas fa-lock modal-icon"></i>
-        <h3 id="modal-title">Locked Section</h3>
-        <p>Enter the password to open My Tools.</p>
-        <form id="password-form">
-          <label for="password-input">Password</label>
-          <input
-            type="password"
-            id="password-input"
-            name="password"
-            autocomplete="off"
-            placeholder="Enter password"
-            required
-          />
-          <p class="password-error" id="password-error" role="alert" hidden>
-            Incorrect password. Try again.
-          </p>
-          <button type="submit" class="btn btn-primary">Unlock</button>
-        </form>
-      </div>
-    </div>
-
     <script src="js/script.js"></script>
   </body>
 </html>
